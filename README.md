@@ -1,3 +1,5 @@
+# [WORKING....]
+
 # RustyWidgets
 
 **RustyWidgets** – A modular widget manager for Linux written in Rust. It allows creating and displaying custom widgets using  **HTML/CSS** , with real-time updates and flexible desktop positioning. Inspired by `eww`, but leveraging Rust’s performance and safety.

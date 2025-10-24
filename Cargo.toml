@@ -6,29 +6,30 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-# Para crear ventanas y renderizar HTML/CSS
-gtk = "0.18"
-webkit2gtk = "2.0"
-
-# Para configuración
+# Parsing y serialización
 toml = "0.8"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 
-# Para sistema de archivos y gestión
-notify = "6.0"  # Para watch de archivos
-walkdir = "2.4"
+# UI y rendering
+gtk = "0.18"
+webkit2gtk = { version = "2.0", features = ["v2_38"] }
+gdk = "0.18"
 
-# Para async/concurrencia
-tokio = { version = "1", features = ["full"] }
+# Sistema de eventos y concurrencia
+tokio = { version = "1.35", features = ["full"] }
+crossbeam = "0.8"
 
-# Para logs
+# Utilidades
+notify = "6.1"  # File watching
+anyhow = "1.0"
+thiserror = "1.0"
 log = "0.4"
 env_logger = "0.11"
 
-# Para utilidades
-anyhow = "1.0"
-thiserror = "1.0"
+# Sistema
+sysinfo = "0.30"
+chrono = "0.4"
 
 [profile.release]
 opt-level = 3

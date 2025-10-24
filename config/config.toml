@@ -1,0 +1,13 @@
+# Configuración principal de RustyWidgets
+
+# Directorio donde se encuentran los widgets
+widgets_dir = "widgets"
+
+# Directorio de configuración de widgets
+config_dir = "config"
+
+# Recarga automática de widgets cuando cambian los archivos
+auto_reload = true
+
+# Nivel de log: "trace", "debug", "info", "warn", "error"
+log_level = "info"
